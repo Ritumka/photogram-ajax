@@ -1,5 +1,5 @@
 var existingRequest = $(".<%= dom_id(@follow_request) %>");
 
-var unRequest = $("<%= j(render "follow_requests/follow_unfollow", sender: @follow_request.sender, recipient: @follow_request.recipient) %>");
+var newRequest = $("<%= j(render "follow_requests/follow_unfollow", sender: @follow_request.sender, recipient: @follow_request.recipient) %>");
 
-existingRequest.replaceWith(unRequest)
+existingRequest.replaceWith(newRequest)
