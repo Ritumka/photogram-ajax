@@ -1,4 +1,4 @@
-var existingRequest = $(".<%= dom_id(@follow_request) %>");
+var existingRequest = $(".<%= dom_id(@follow_request.recipient) %>");
 
 var unRequest = $("<%= j(render "follow_requests/follow_unfollow", sender: @follow_request.sender, recipient: @follow_request.recipient) %>");
 
